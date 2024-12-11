@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/email_success"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/signup_card"
+        android:layout_width="453dp"
+        android:layout_height="594dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/border"
+        android:transitionName="offline_transition_card"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="280dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Request Sent ! "
+            android:textColor="@color/trucking_grey"
+            android:textSize="44sp" />
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="211dp"
+            android:layout_height="193dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="80dp"
+            app:srcCompat="@drawable/email_sent" />
+
+        <TextView
+            android:id="@+id/textView40"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="370dp"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center"
+            android:text="You have successfully sent an email , Your request will be looked into shortly"
+            android:textColor="#793C3C3C"
+            android:textSize="24sp" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

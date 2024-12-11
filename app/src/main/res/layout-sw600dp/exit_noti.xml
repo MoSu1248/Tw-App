@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/consent_noti">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/signup_card"
+        android:layout_width="387dp"
+        android:layout_height="403dp"
+        android:layout_margin="10dp"
+
+        android:transitionName="offline_transition_card"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat_light"
+            android:gravity="center_horizontal"
+            android:text="Are you sure ?"
+            android:textColor="@color/trucking_grey"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnForgotPasswordBack" />
+
+        <TextView
+
+            android:id="@+id/textView2"
+            android:layout_width="310dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="80dp"
+            android:fontFamily="sans-serif"
+            android:text="Doing so will erase all data captured so far and return you to the home screen!"
+            android:textAlignment="center"
+            android:textColor="#999999"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnForgotPasswordBack" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/btnForgotPasswordBack"
+            android:layout_width="163dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="32dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_colorFilter="@color/trucking_200"
+            app:lottie_fileName="caution.json"
+            app:lottie_speed="0.9" />
+
+        <ImageButton
+            android:id="@+id/imageView23"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:background="#00FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/baseline_close_24" />
+
+        <Button
+            android:id="@+id/endYes"
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Yes"
+            android:textColor="@color/off_white"
+            android:textSize="12sp"
+
+            app:layout_constraintEnd_toStartOf="@+id/endNo"
+            app:layout_constraintHorizontal_bias="0.678"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <Button
+            android:id="@+id/endNo"
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="56dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="No"
+            android:textColor="@color/off_white"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

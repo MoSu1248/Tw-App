@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/waist_circum"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/test_layout"
+        tools:layout_editor_absoluteX="-399dp"
+        tools:layout_editor_absoluteY="505dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/signup_card"
+        android:layout_width="792dp"
+        android:layout_height="1105dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/border"
+        android:transitionName="offline_transition_card"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.451">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:gravity="center"
+        android:text="Wellness Screening"
+        android:textColor="#494949"
+        android:textSize="60sp" />
+
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="640dp"
+            android:layout_marginTop="75dp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:text="Wellness Questions"
+            android:textColor="@color/grey"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/client_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="130dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="TextView"
+        android:textColor="@color/trucking_200"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <Button
+        android:id="@+id/wellness5_nextbtn"
+        android:layout_width="164dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="408dp"
+        android:layout_marginTop="1000dp"
+        android:layout_marginBottom="1000dp"
+        android:fontFamily="@font/roboto_bold"
+        android:shadowColor="#272424"
+        android:text="Next"
+        android:background="@drawable/ripple_effect_outline"
+        android:textColor="@drawable/btn_txt_color"
+        android:textSize="16sp"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <Button
+        android:id="@+id/wellness5_prevbtn"
+        android:layout_width="164dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="208dp"
+        android:layout_marginTop="1000dp"
+        android:layout_marginBottom="1000dp"
+        android:fontFamily="@font/roboto_bold"
+        android:shadowColor="#272424"
+        android:text="Previous"
+        android:background="@drawable/ripple_effect_outline"
+        android:textColor="@drawable/btn_txt_color"
+        android:textSize="16sp"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/wellness5_nextbtn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:id="@+id/textInputLayout22"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="420dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="250dp"
+            android:hint="Blood Sugar (mmol)"
+            app:boxCollapsedPaddingTop="10dp"
+            app:boxStrokeColor="#B71C1C"
+            app:circularflow_defaultRadius="5dp"
+            app:hintTextColor="#383C3C"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/client_name">
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:id="@+id/blood_sugar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/work_sans"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHighlight="#A55252"
+                android:textColorHint="#5A5858"
+                android:textColorLink="#B71C1C" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="420dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="450dp"
+            android:hint="Waist Circumference (cm)"
+            app:boxCollapsedPaddingTop="10dp"
+            app:boxStrokeColor="#B71C1C"
+            app:circularflow_defaultRadius="5dp"
+            app:hintTextColor="#383C3C"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout3">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/waist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/work_sans"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textColorHighlight="#A55252"
+                android:textColorHint="#5A5858"
+                android:textColorLink="#B71C1C" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:id="@+id/textInputLayout3"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="420dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="350dp"
+            android:hint="Total Cholesterol (mmol)"
+            app:boxCollapsedPaddingTop="10dp"
+            app:boxStrokeColor="#B71C1C"
+            app:circularflow_defaultRadius="5dp"
+            app:hintTextColor="#383C3C"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout22">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cholesterol"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/work_sans"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textColorHighlight="#A55252"
+                android:textColorHint="#5A5858"
+                android:textColorLink="#B71C1C" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+
+
+            android:id="@+id/textInputLayout5"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="420dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="550dp"
+            android:hint="Weight (kg)"
+            app:boxCollapsedPaddingTop="10dp"
+            app:boxStrokeColor="#B71C1C"
+            app:circularflow_defaultRadius="5dp"
+            app:hintTextColor="#383C3C"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:id="@+id/weight"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/work_sans"
+                android:inputType="numberDecimal"
+                android:textColor="@color/black"
+                android:textColorHighlight="#A55252"
+                android:textColorHint="#5A5858"
+                android:textColorLink="#B71C1C" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+
+
+            android:id="@+id/textInputLayout6"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="420dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="650dp"
+            android:hint="Height (cm)"
+            app:boxCollapsedPaddingTop="10dp"
+            app:boxStrokeColor="#B71C1C"
+            app:circularflow_defaultRadius="5dp"
+            app:hintTextColor="#383C3C"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout5">
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:id="@+id/height"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/work_sans"
+                android:inputType="numberDecimal"
+                android:textColor="@color/black"
+                android:textColorHighlight="#A55252"
+                android:textColorHint="#5A5858"
+                android:textColorLink="#B71C1C" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

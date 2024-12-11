@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/back2d"
+
+    android:layout_height="match_parent"
+    tools:context=".ClientSearch">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/Backbtn"
+        android:layout_width="152dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="2000dp"
+
+        android:layout_marginEnd="748dp"
+        android:background="@android:color/transparent"
+        android:rotation="180"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_colorFilter="@color/trucking_grey"
+        app:lottie_fileName="Animation_1702899041277.json"
+        app:lottie_repeatCount="10000"
+        app:lottie_speed="1" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/client_card"
+        android:layout_width="wrap_content"
+        android:layout_height="760dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_weight="1"
+        android:transitionName="client_card"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.222">
+
+        <TextView
+            android:id="@+id/textView51"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="160dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Client List "
+            android:textColor="@color/trucking_grey" />
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="195dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/border_top"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/phone_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="360dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="Last Appointment"
+                android:textColor="@color/trucking_grey"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/user_name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="Name"
+                android:textColor="@color/trucking_grey"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/phone_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="235dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="Client ID"
+                android:textColor="@color/trucking_grey"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/search_user_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="95dp"
+            android:layout_marginEnd="75dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/search_border">
+
+            <Button
+
+                android:id="@+id/search_user_btn2"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/border"
+                app:icon="@drawable/arrow_forward"
+                app:iconTint="@color/off_white" />
+
+            <EditText
+                android:id="@+id/seach_username_input"
+                android:layout_width="322dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="-11dp"
+                android:layout_toStartOf="@+id/search_user_btn2"
+                android:layout_toLeftOf="@id/search_user_btn"
+                android:layout_toEndOf="@+id/search_user_btn"
+                android:background="@null"
+                android:fontFamily="@font/montserrat_light"
+                android:hint="Enter Client ID "
+                android:inputType="textVisiblePassword|numberPassword"
+                android:paddingStart="10dp"
+                android:textColor="@color/trucking_grey"
+                android:textSize="11sp" />
+
+            <ImageView
+
+                android:id="@+id/search_user_btn"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="8dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/search_icon"
+                app:tint="@color/trucking_grey" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/client_card2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_marginTop="220dp"
+
+            android:layout_weight="1"
+            android:transitionName="client_card"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.222">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/search_user_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/search_user_layout"
+
+
+                android:layout_marginTop="10dp"
+
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                tools:ignore="NotSibling" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imageView18"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="25dp"
+            android:rotation="0"
+            app:srcCompat="@drawable/header_line" />
+
+        <ImageView
+            android:id="@+id/client_image"
+            android:layout_width="46dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="25dp"
+            android:transitionName="client_transition_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/medical_rec" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity="center"
+            android:text="Medical Records"
+            android:textColor="#494949"
+            android:textColorHint="@color/black"
+            android:textSize="24sp"
+            android:transitionName="offline_transition_txt"
+            app:layout_constraintBottom_toTopOf="@+id/row2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageButton
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="22dp"
+            android:backgroundTint="#00FFFFFF"
+            android:rotation="180"
+            android:tint="@color/grey"
+            app:srcCompat="@drawable/arrow_forward" />
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+

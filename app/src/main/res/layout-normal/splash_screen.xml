@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".splash_screen">
+
+    <ImageView
+        android:id="@+id/nbcrfi_logo"
+        android:layout_width="373dp"
+        android:layout_height="183dp"
+        android:layout_marginTop="180dp"
+        android:contentDescription="NBCRFLI_ splash logo "
+        android:transitionName="nbcrfli_transition"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/nbcrfli_logo" />
+
+    <ImageView
+        android:id="@+id/trucking_logo"
+        android:layout_width="324dp"
+        android:layout_height="166dp"
+        android:contentDescription="Trucking wellness splash logo"
+        android:transitionName="trucking_transition"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nbcrfi_logo"
+        app:layout_constraintVertical_bias="0.148"
+        app:srcCompat="@drawable/tw_logo" />
+
+<!--    <com.wajahatkarim3.easyflipview.EasyFlipView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:flipOnTouch="true"-->
+<!--        app:flipEnabled="true"-->
+<!--        app:flipDuration="400"-->
+<!--        app:flipType="vertical"-->
+<!--        app:flipFrom="front"-->
+<!--        app:autoFlipBack="true"-->
+<!--        app:autoFlipBackTime="1000"-->
+<!--        tools:ignore="MissingConstraints">-->
+
+<!--        &lt;!&ndash; Back Layout Goes Here &ndash;&gt;-->
+<!--        <include layout="@layout/flash_card_layout_back"/>-->
+
+<!--        &lt;!&ndash; Front Layout Goes Here &ndash;&gt;-->
+<!--        <include layout="@layout/flash_card_layout_front"/>-->
+
+<!--    </com.wajahatkarim3.easyflipview.EasyFlipView>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

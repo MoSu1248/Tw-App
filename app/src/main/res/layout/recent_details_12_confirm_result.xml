@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/test_layout"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/signup_card"
+        android:layout_width="499dp"
+        android:layout_height="784dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/border"
+        android:transitionName="offline_transition_card"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.451">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:gravity="center"
+            android:text="Confirmatory Result"
+            android:textColor="#494949"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="119dp"
+            android:layout_height="85dp"
+            android:layout_marginStart="345dp"
+            android:layout_marginTop="60dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Confirmatroy Test Kit"
+            android:textColor="@color/grey"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+        <TextView
+            android:id="@+id/client_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="100dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="TextView"
+            android:textColor="@color/trucking_200"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+        <Button
+            android:id="@+id/confirm_result_prevbtn"
+            android:layout_width="164dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="650dp"
+            android:background="@drawable/ripple_effect_outline"
+            android:fontFamily="@font/montserrat_medium"
+            android:shadowColor="#272424"
+            android:text="Previous"
+            android:textColor="@drawable/btn_txt_color"
+            android:textSize="12sp"
+            app:cornerRadius="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="250dp"
+            android:fontFamily="@font/work_sans"
+            android:text="Choose the test result : "
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/client_name" />
+
+        <Button
+            android:id="@+id/confirm_test_reactive"
+            android:layout_width="240dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="300dp"
+            android:background="@drawable/ripple_effect_outline"
+            android:fontFamily="@font/montserrat_medium"
+            android:shadowColor="#272424"
+            android:text="Reactive"
+            android:textColor="@drawable/txt_color"
+            android:textSize="14sp"
+            app:cornerRadius="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/confirm_test_unreactive" />
+
+        <Button
+            android:id="@+id/confirm_test_unreactive"
+            android:layout_width="240dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="400dp"
+            android:background="@drawable/ripple_effect_outline"
+            android:fontFamily="@font/montserrat_medium"
+            android:shadowColor="#272424"
+            android:text="Non-reactive"
+            android:textColor="@drawable/txt_color"
+            android:textSize="14sp"
+            app:cornerRadius="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+        <Button
+            android:id="@+id/confirm_test_invalid"
+            android:layout_width="240dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="500dp"
+            android:background="@drawable/ripple_effect_outline"
+            android:fontFamily="@font/montserrat_medium"
+            android:shadowColor="#272424"
+            android:text="Invalid"
+            android:textColor="@drawable/txt_color"
+            android:textSize="14sp"
+            app:cornerRadius="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/include"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/confirm_test_reactive"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

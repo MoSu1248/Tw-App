@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/test_layout"
+        tools:layout_editor_absoluteY="384dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/signup_card"
+        android:layout_width="499dp"
+        android:layout_height="784dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/border"
+        android:transitionName="offline_transition_card"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.507">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:gravity="center"
+            android:text="Referrals"
+            android:textColor="#494949"
+            android:textSize="50sp" />
+
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="300dp"
+            android:layout_marginTop="60dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Refer the client for:"
+            android:textColor="@color/grey"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+
+        <TextView
+            android:id="@+id/client_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="100dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="TextView"
+            android:textColor="@color/trucking_200"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+
+        <RadioGroup
+            android:id="@+id/radioGroup8"
+            android:layout_width="293dp"
+            android:layout_height="83dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="210dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.266"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView19">
+
+            <RadioButton
+                android:id="@+id/family_planning_yes"
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:elevation="4dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="Yes"
+                android:textAlignment="center"
+                android:textColor="@drawable/text_color"
+                app:layout_constraintEnd_toStartOf="@+id/female"
+                app:layout_constraintHorizontal_bias="0.689"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+            <RadioButton
+                android:id="@+id/family_planning_no"
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="484dp"
+                android:layout_marginRight="484dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:elevation="4dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="No"
+                android:textAlignment="center"
+                android:textColor="@drawable/text_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radioGroup4"
+            android:layout_width="287dp"
+            android:layout_height="84dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="330dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.249"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9">
+
+            <RadioButton
+                android:id="@+id/social_services_yes"
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:elevation="4dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="Yes"
+                android:textAlignment="center"
+                android:textColor="@drawable/text_color"
+                app:layout_constraintEnd_toStartOf="@+id/female"
+                app:layout_constraintHorizontal_bias="0.689"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+            <RadioButton
+                android:id="@+id/social_services_no"
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="384dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:elevation="4dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="No"
+                android:textAlignment="center"
+                android:textColor="@drawable/text_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="159dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="320dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Social Services"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/radioGroup8"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup8" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="200dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Family Planning"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.199"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/client_name" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginStart="330dp"
+            android:layout_marginTop="200dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Antenatal Care"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.847"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/client_name" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup10"
+            android:layout_width="226dp"
+            android:layout_height="88dp"
+            android:layout_marginStart="280dp"
+            android:layout_marginTop="210dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.872"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView22">
+
+            <RadioButton
+                android:id="@+id/anten_yes"
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:elevation="4dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="Yes"
+                android:textAlignment="center"
+                android:textColor="@drawable/text_color"
+                app:layout_constraintEnd_toStartOf="@+id/female"
+                app:layout_constraintHorizontal_bias="0.689"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+            <RadioButton
+                android:id="@+id/anten_no"
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="384dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:elevation="4dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="No"
+                android:textAlignment="center"
+                android:textColor="@drawable/text_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="159dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="315dp"
+            android:layout_marginTop="300dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="NCD's treatment and support"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/radioGroup10"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup10" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup114"
+            android:layout_width="214dp"
+            android:layout_height="84dp"
+            android:layout_marginStart="280dp"
+            android:layout_marginTop="330dp"
+            android:layout_marginEnd="64dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="@+id/textView30"
+            app:layout_constraintTop_toBottomOf="@+id/textView30">
+
+            <RadioButton
+                android:id="@+id/ncd_treatment_yes"
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:elevation="4dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="Yes"
+                android:textAlignment="center"
+                android:textColor="@drawable/text_color"
+                app:layout_constraintEnd_toStartOf="@+id/female"
+                app:layout_constraintHorizontal_bias="0.689"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+            <RadioButton
+                android:id="@+id/ncd_treatment_no"
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="384dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:elevation="4dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="No"
+                android:textAlignment="center"
+                android:textColor="@drawable/text_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/referral2_nextbtn"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="280dp"
+            android:layout_marginTop="700dp"
+            android:layout_marginBottom="96dp"
+            android:background="@drawable/ripple_effect_outline"
+            android:fontFamily="@font/montserrat_medium"
+            android:shadowColor="#272424"
+            android:text="Next"
+            android:textColor="@drawable/btn_txt_color"
+            android:textSize="12sp"
+            app:cornerRadius="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/referral2_prevbtn"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="700dp"
+            android:layout_marginBottom="96dp"
+            android:background="@drawable/ripple_effect_outline"
+            android:fontFamily="@font/montserrat_medium"
+            android:shadowColor="#272424"
+            android:text="Previous"
+            android:textColor="@drawable/btn_txt_color"
+            android:textSize="12sp"
+            app:cornerRadius="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/referral2_nextbtn"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:id="@+id/textInputLayout22"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="460dp"
+            android:layout_height="102dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="430dp"
+            android:hint="Other Referrals"
+            app:boxCollapsedPaddingTop="10dp"
+            app:boxStrokeColor="#B71C1C"
+            app:circularflow_defaultRadius="5dp"
+            app:hintTextColor="#383C3C"
+            app:layout_constraintStart_toStartOf="@+id/textView11"
+            app:layout_constraintTop_toBottomOf="@+id/textView11">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:id="@+id/other_refferrals"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/montserrat_medium"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHighlight="#A55252"
+                android:textColorHint="#5A5858"
+                android:textColorLink="#B71C1C"
+                android:textSize="14sp" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+
+
+            android:id="@+id/textInputLayout6"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="462dp"
+            android:layout_height="105dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="550dp"
+            android:hint="Comments"
+            app:boxCollapsedPaddingTop="10dp"
+            app:boxStrokeColor="#B71C1C"
+            app:circularflow_defaultRadius="5dp"
+
+
+            app:hintTextColor="#383C3C"
+            app:layout_constraintStart_toStartOf="@+id/textView28"
+            app:layout_constraintTop_toBottomOf="@+id/textView28">
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:id="@+id/comments"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/montserrat_medium"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHighlight="#A55252"
+                android:textColorHint="#5A5858"
+                android:textColorLink="#B71C1C"
+                android:textSize="14sp" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

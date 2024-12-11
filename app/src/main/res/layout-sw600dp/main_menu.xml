@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back2d"
+    tools:context=".MainMenuActivity">
+
+
+    <LinearLayout
+        android:id="@+id/row12"
+        android:layout_width="860dp"
+        android:layout_height="369dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="175dp"
+        android:orientation="horizontal"
+
+        android:padding="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/session_settings"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="My Session Settings"
+                android:textColor="#494949"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/edit_settings_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="600dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Edit Settings"
+                android:textColor="#494949"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="32dp"
+                android:layout_height="22dp"
+                android:layout_marginStart="760dp"
+                android:layout_marginTop="37dp"
+                app:srcCompat="@drawable/arrow" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="46dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="115dp"
+                app:srcCompat="@drawable/id_img" />
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="44dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="470dp"
+                android:layout_marginTop="115dp"
+                app:srcCompat="@drawable/username" />
+
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="46dp"
+                android:layout_height="33dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="235dp"
+                app:srcCompat="@drawable/date" />
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="470dp"
+                android:layout_marginTop="235dp"
+                app:srcCompat="@drawable/location" />
+
+            <TextView
+                android:id="@+id/textView38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="115dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Nurse ID"
+                android:textColor="#3DA697"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView37"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="235dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Date"
+                android:textColor="#C1151B"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView36"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="530dp"
+                android:layout_marginTop="235dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Location"
+                android:textColor="#8CBF4D"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView46"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="530dp"
+                android:layout_marginTop="115dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Username"
+                android:textColor="#FBB25F"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/email_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="140dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:textColor="#494949"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/text_view_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="260dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:textColor="#494949"
+                android:textSize="22sp" />
+
+
+            <TextView
+                android:id="@+id/text_view_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="530dp"
+                android:layout_marginTop="140dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:textColor="#494949"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/text_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="530dp"
+                android:layout_marginTop="260dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text=""
+                android:textColor="#494949"
+                android:textSize="22sp" />
+
+            <!--            <LinearLayout-->
+<!--                android:id="@+id/row2"-->
+<!--                android:layout_width="560dp"-->
+<!--                android:layout_height="138dp"-->
+<!--                android:layout_marginStart="20dp"-->
+<!--                android:layout_marginTop="50dp"-->
+<!--                android:layout_marginBottom="144dp"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:padding="10dp">-->
+
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:id="@+id/offline_card"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="96dp"-->
+<!--                    android:layout_margin="10dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:transitionName="offline_transition_card"-->
+<!--                    app:cardCornerRadius="5dp"-->
+<!--                    app:cardElevation="5dp">-->
+
+<!--                    <RelativeLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent">-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/offline_txt"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_below="@+id/offline_img"-->
+<!--                            android:layout_centerHorizontal="true"-->
+<!--                            android:layout_marginTop="0dp"-->
+<!--                            android:fontFamily="@font/montserrat_light"-->
+<!--                            android:text="Offline Options"-->
+<!--                            android:textColor="#B71C1C"-->
+<!--                            android:textSize="24sp"-->
+<!--                            android:transitionName="offline_transition_txt" />-->
+
+<!--                        <ImageView-->
+<!--                            android:id="@+id/offline_img"-->
+<!--                            android:layout_width="162dp"-->
+<!--                            android:layout_height="145dp"-->
+<!--                            android:layout_centerHorizontal="true"-->
+<!--                            android:layout_marginTop="15dp"-->
+<!--                            android:src="@drawable/offline_icon"-->
+<!--                            android:transitionName="offline_transition_image" />-->
+
+
+<!--                    </RelativeLayout>-->
+<!--                </androidx.cardview.widget.CardView>-->
+
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:id="@+id/setup_btn"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_margin="10dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:transitionName="scan_card_transition"-->
+<!--                    app:cardCornerRadius="5dp"-->
+<!--                    app:cardElevation="5dp">-->
+
+<!--                    <RelativeLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="88dp">-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/beautyName"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_below="@+id/setup_img"-->
+<!--                            android:layout_centerHorizontal="true"-->
+<!--                            android:layout_marginTop="0dp"-->
+<!--                            android:fontFamily="@font/montserrat_light"-->
+<!--                            android:text="Session Setup"-->
+<!--                            android:textColor="#B71C1C"-->
+<!--                            android:textSize="24sp" />-->
+
+<!--                        <ImageView-->
+<!--                            android:id="@+id/setup_img"-->
+<!--                            android:layout_width="162dp"-->
+<!--                            android:layout_height="145dp"-->
+<!--                            android:layout_centerHorizontal="true"-->
+<!--                            android:layout_marginTop="15dp"-->
+<!--                            android:src="@drawable/settings2"-->
+<!--                            android:transitionName="scan_transition" />-->
+
+<!--                    </RelativeLayout>-->
+<!--                </androidx.cardview.widget.CardView>-->
+<!--            </LinearLayout>-->
+
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/row1"
+        android:layout_width="840dp"
+        android:layout_height="241dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="947dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/offline_card"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:transitionName="offline_transition_card"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/offline_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/offline_img"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="Offline Options"
+                    android:textColor="#494949"
+                    android:textSize="24sp"
+                    android:transitionName="offline_transition_txt" />
+
+                <ImageView
+                    android:id="@+id/offline_img"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp"
+                    android:src="@drawable/offline_icon"
+                    android:transitionName="offline_transition_image" />
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/setup_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:transitionName="scan_card_transition"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/beautyName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/setup_img"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="Session Setup"
+                    android:textColor="#494949"
+                    android:textSize="24sp" />
+
+                <ImageView
+                    android:id="@+id/setup_img"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp"
+                    app:srcCompat="@drawable/scan_img"
+                    android:transitionName="scan_transition" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/logout_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/grocName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/logout_img"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="Logout"
+                    android:textColor="#494949"
+                    android:textSize="24sp" />
+
+                <ImageView
+                    android:id="@+id/logout_img"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp"
+                    android:src="@drawable/exit_con" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/row21"
+        android:layout_width="840dp"
+        android:layout_height="241dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="630dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/quiz_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/clothingImagetext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/clothingImage"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="Testing"
+                    android:textColor="#494949"
+                    android:textSize="24sp" />
+
+                <ImageView
+                    android:id="@+id/clothingImage"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp"
+                    android:src="@drawable/q2" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/request_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:transitionName="request_card_transition"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/pharmName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/request_image"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="Request"
+                    android:textColor="#494949"
+                    android:textSize="24sp" />
+
+                <ImageView
+                    android:id="@+id/request_image"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp"
+                    android:src="@drawable/mail2"
+                    android:transitionName="request_transition" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/quiz_btn2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="5dp">
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/client_card"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="5dp"
+            android:transitionName="client_transition_card"
+            app:cardElevation="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/client"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/client_image"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="Medical Records"
+                    android:textColor="#494949"
+                    android:textSize="24sp" />
+
+                <ImageView
+                    android:id="@+id/client_image"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp"
+                    android:transitionName="client_transition_image"
+                    android:src="@drawable/medical_rec" />
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="570dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Medical Services"
+        android:textColor="#494949"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="897dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="App Settings"
+        android:textColor="#494949"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Good Day,"
+        android:textColor="#494949"
+        android:textSize="48sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/header_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="70dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColor="#494949"
+        android:textSize="48sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="50dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="800dp"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/help_btn" />
+
+</RelativeLayout>

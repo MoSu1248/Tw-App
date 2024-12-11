@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/flagged_user"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/signup_card"
+        android:layout_width="431dp"
+        android:layout_height="447dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/border"
+        android:transitionName="offline_transition_card"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="190dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Flagged User"
+            android:textColor="@color/trucking_grey"
+            android:textSize="34sp" />
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="165dp"
+            android:layout_height="102dp"
+            android:layout_marginStart="135dp"
+            android:layout_marginTop="80dp"
+            app:srcCompat="@drawable/flag_noti" />
+
+        <TextView
+            android:id="@+id/textView40"
+            android:layout_width="309dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="280dp"
+            android:gravity="center"
+            android:text=" Flagged client account detected. Please review and take necessary action."
+            android:textColor="@color/grey"
+            android:textSize="20sp" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

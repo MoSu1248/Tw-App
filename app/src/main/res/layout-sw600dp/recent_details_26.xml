@@ -1,0 +1,883 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background_question_test"
+    android:id="@+id/main_menu_scroll">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="691dp"
+        android:layout_height="895dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/signup_card2"
+                android:layout_width="650dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:transitionName="offline_transition_card"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.669"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:gravity="center"
+                    android:text="Client Overview"
+                    android:textColor="#494949"
+                    android:textSize="40sp" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="132dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="440dp"
+                    android:layout_marginTop="60dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="Client Question Overview"
+                    android:textColor="@color/grey"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+                <TextView
+                    android:id="@+id/client_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="100dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="TextView"
+                    android:textColor="@color/trucking_200"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/hivTestContainer"
+                android:layout_width="600dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="230dp"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:transitionName="offline_transition_card"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.669"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" >
+
+                <TextView
+                    android:id="@+id/text_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:gravity="center"
+                    android:text="HIV Testing Results"
+                    android:textColor="#494949"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView50"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hiv Test Result"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="70dp"/>
+
+                <TextView
+                    android:id="@+id/textView51"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hiv Retest Result"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="110dp"/>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/signup_card"
+                android:layout_width="600dp"
+                android:layout_height="160dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="1680dp"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:transitionName="offline_transition_card"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.669"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" >
+
+                <!--                <TextView-->
+                <!--                    android:id="@+id/text_heading_testing"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginStart="30dp"-->
+                <!--                    android:layout_marginTop="20dp"-->
+                <!--                    android:fontFamily="@font/montserrat_semibold"-->
+                <!--                    android:gravity="center"-->
+                <!--                    android:text="Wellness Testing Results"-->
+                <!--                    android:textColor="#494949"-->
+                <!--                    android:textSize="18sp" />-->
+
+                <!--                <TextView-->
+                <!--                    android:id="@+id/textView52"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:fontFamily="@font/montserrat_semibold"-->
+
+                <!--                    android:text="Diastolic Blood Pressure test Result"-->
+                <!--                    android:layout_marginStart="50dp"-->
+                <!--                    android:layout_marginTop="60dp"/>-->
+
+                <!--                <TextView-->
+                <!--                    android:id="@+id/textView53"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:text="Systolic Blood Pressure test Result"-->
+                <!--                    android:layout_marginStart="50dp"-->
+                <!--                    android:layout_marginTop="90dp"/>-->
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <TextView
+                            android:id="@+id/text_heading_testing3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:text="Wellness Retest Results"
+                            android:textColor="#494949"
+                            android:textSize="18sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView568"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:text="Diastolic Blood Pressure Retest Result" />
+                        <TextView
+                            android:id="@+id/dia_retest_result"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:text="50" />
+                        <TextView
+                            android:id="@+id/dia_retest_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:text="Dangerously Low" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <TextView
+                            android:id="@+id/retest_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="50dp"
+
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:text="Systolic Blood Pressure Retest Result" />
+                        <TextView
+                            android:id="@+id/sys_retest_result"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:text="50" />
+                        <TextView
+                            android:id="@+id/sys_retest_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:text="Dangerously Low" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <TextView
+                            android:id="@+id/textView588"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="50dp"
+
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:text="Blood Sugar Retest" />
+                        <TextView
+                            android:id="@+id/textView567"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:text="50" />
+                        <TextView
+                            android:id="@+id/textView566"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:text="Dangerously Low" />
+                    </TableRow>
+
+                </TableLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+
+                android:id="@+id/flaggingContainer"
+                android:layout_width="600dp"
+                android:layout_height="320dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="1340dp"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:transitionName="offline_transition_card"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.669"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/text_heading2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:gravity="center"
+                    android:text="Flagging and Reasoning"
+                    android:textColor="#494949"
+                    android:textSize="18sp" />
+
+                <RelativeLayout
+                    android:id="@+id/flag_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <RadioGroup
+                        android:id="@+id/flag_user"
+                        android:layout_width="209dp"
+                        android:layout_height="86dp"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="100dp"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.212"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+                        <RadioButton
+                            android:id="@+id/flag_user_yes"
+                            android:layout_width="110dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/radio_selector"
+                            android:button="@android:color/transparent"
+                            android:elevation="4dp"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="Yes"
+                            android:textAlignment="center"
+                            android:textColor="@drawable/text_color"
+                            app:layout_constraintEnd_toStartOf="@+id/female"
+                            app:layout_constraintHorizontal_bias="0.689"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+                        <RadioButton
+                            android:id="@+id/flag_user_no"
+                            android:layout_width="110dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="384dp"
+                            android:background="@drawable/radio_selector"
+                            android:button="@android:color/transparent"
+                            android:elevation="4dp"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="No"
+                            android:textAlignment="center"
+                            android:textColor="@drawable/text_color"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+                    </RadioGroup>
+
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        android:id="@+id/textInputLayout224"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="190dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:hint="Flagging Reason"
+                        app:boxCollapsedPaddingTop="10dp"
+                        app:boxStrokeColor="#B71C1C"
+                        app:circularflow_defaultRadius="5dp"
+                        app:hintTextColor="#383C3C">
+
+                        <com.google.android.material.textfield.TextInputEditText
+
+                            android:id="@+id/flag_reason"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:inputType="text"
+                            android:textColor="@color/black"
+                            android:textColorHighlight="#A55252"
+                            android:textColorHint="#5A5858"
+                            android:textColorLink="#B71C1C"
+                            android:textSize="14sp" />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="80dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="Flag User?"
+                        android:textSize="14sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.154"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/medicationContainer"
+                android:layout_width="600dp"
+                android:layout_height="300dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="1020dp"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:transitionName="offline_transition_card"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.669"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/meds_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:gravity="center"
+                    android:text="Medication Adminstered"
+                    android:textColor="#494949"
+                    android:textSize="18sp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:id="@+id/textInputLayout22"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:layout_marginTop="50dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"
+
+                    android:hint="Medication"
+                    app:boxCollapsedPaddingTop="10dp"
+                    app:boxStrokeColor="#B71C1C"
+                    app:circularflow_defaultRadius="5dp"
+                    app:hintTextColor="#383C3C"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/flag_user">
+
+                    <com.google.android.material.textfield.TextInputEditText
+
+                        android:id="@+id/medication_field"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        android:textColorHighlight="#A55252"
+                        android:textColorHint="#5A5858"
+                        android:textColorLink="#B71C1C"
+                        android:textSize="14sp" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/allResultsContainer"
+                android:layout_width="600dp"
+                android:layout_height="250dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="750dp"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:transitionName="offline_transition_card"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.669"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/all_result_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:gravity="center"
+                    android:text="All Results"
+                    android:textColor="#494949"
+                    android:textSize="18sp" />
+
+                <ExpandableListView
+                    android:id="@+id/elvMobiles"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:layout_marginTop="50dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout22"></ExpandableListView>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/wellnessTestContainer"
+                android:layout_width="600dp"
+                android:layout_height="320dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="400dp"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:transitionName="offline_transition_card"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.669"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" >
+
+                <!--                <TextView-->
+                <!--                    android:id="@+id/text_heading_testing"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginStart="30dp"-->
+                <!--                    android:layout_marginTop="20dp"-->
+                <!--                    android:fontFamily="@font/montserrat_semibold"-->
+                <!--                    android:gravity="center"-->
+                <!--                    android:text="Wellness Testing Results"-->
+                <!--                    android:textColor="#494949"-->
+                <!--                    android:textSize="18sp" />-->
+
+                <!--                <TextView-->
+                <!--                    android:id="@+id/textView52"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:fontFamily="@font/montserrat_semibold"-->
+
+                <!--                    android:text="Diastolic Blood Pressure test Result"-->
+                <!--                    android:layout_marginStart="50dp"-->
+                <!--                    android:layout_marginTop="60dp"/>-->
+
+                <!--                <TextView-->
+                <!--                    android:id="@+id/textView53"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:text="Systolic Blood Pressure test Result"-->
+                <!--                    android:layout_marginStart="50dp"-->
+                <!--                    android:layout_marginTop="90dp"/>-->
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <TextView
+                            android:id="@+id/Wellness_test_heading"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:text="Wellness Testing Results"
+                            android:textColor="#494949"
+                            android:textSize="18sp" />
+                    </TableRow>
+                    <TableRow
+                        android:background="#32AFBCC6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView56"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:text="Test"
+                            android:textColor="#494949" />
+                        <TextView
+                            android:id="@+id/textView563"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:text="Value"
+                            android:textColor="#494949"/>
+                        <TextView
+                            android:id="@+id/textView564"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:text="Status"
+                            android:textColor="#494949"/>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView561"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:text="Diastolic Blood Pressure test Result" />
+                        <TextView
+                            android:id="@+id/diasBloodResult"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:text="50" />
+                        <TextView
+                            android:id="@+id/diasBloodStatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:text="Dangerously Low" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <TextView
+                            android:id="@+id/textView571"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="50dp"
+
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:text="Systolic Blood Pressure test Result" />
+                        <TextView
+                            android:id="@+id/sysBloodResult"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:text="50" />
+                        <TextView
+                            android:id="@+id/sysBloodStatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:text="Dangerously Low" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <TextView
+                            android:id="@+id/blood_sugar_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="50dp"
+
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:text="Blood Sugar" />
+                        <TextView
+                            android:id="@+id/bloodSugarResult"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:text="50" />
+                        <TextView
+                            android:id="@+id/bloodSugarStatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:text="Dangerously Low" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <TextView
+                            android:id="@+id/chol_test_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="50dp"
+
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:text="Total Cholesterol" />
+                        <TextView
+                            android:id="@+id/cholesterolResult"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:text="50" />
+                        <TextView
+                            android:id="@+id/cholesterolStatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:text="Dangerously Low" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <TextView
+                            android:id="@+id/waist_test"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="50dp"
+
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:text="Waist Circumference" />
+                        <TextView
+                            android:id="@+id/waistCircumResult"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:text="50" />
+                        <TextView
+                            android:id="@+id/waistCircumStatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:text="Dangerously Low" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <TextView
+                            android:id="@+id/bmi_test"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="50dp"
+
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:text="BMI" />
+                        <TextView
+                            android:id="@+id/bmiResult"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:text="50" />
+                        <TextView
+                            android:id="@+id/bmiStatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:text="Dangerously Low" />
+                    </TableRow>
+                </TableLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/submission_container"
+        android:layout_width="600dp"
+        android:layout_height="70dp"
+        android:layout_weight="1"
+        android:background="@drawable/border"
+        android:foregroundGravity="center"
+        android:transitionName="offline_transition_card"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+
+            android:layout_marginTop="2.5dp"
+            android:background="@drawable/ripple_effect_outline"
+            android:fontFamily="@font/montserrat_medium"
+            android:shadowColor="#272424"
+            android:text="SUBMIT"
+            android:textColor="@drawable/btn_txt_color"
+            android:textSize="14sp"
+            app:cornerRadius="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

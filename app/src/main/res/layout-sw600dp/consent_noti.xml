@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/consent_noti">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/signup_card"
+        android:layout_width="627dp"
+        android:layout_height="615dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/border"
+        android:transitionName="offline_transition_card"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="70dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Client Consent Refused"
+            android:textColor="@color/trucking_grey"
+            android:textSize="44sp" />
+
+        <TextView
+
+            android:id="@+id/textView2"
+            android:layout_width="558dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="420dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="You may not proceed further without providing Consent"
+            android:textAlignment="center"
+            android:textColor="@color/trucking_200"
+            android:textSize="38sp" />
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/btnForgotPasswordBack"
+            android:layout_width="374dp"
+            android:layout_height="245dp"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginEnd="748dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="Animation_alert.json"
+            app:lottie_speed="0.9" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

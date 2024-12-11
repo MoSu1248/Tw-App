@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/caution_user"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/signup_card"
+        android:layout_width="431dp"
+        android:layout_height="447dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/border"
+        android:transitionName="offline_transition_card"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="190dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="WARNING"
+            android:textColor="@color/trucking_200"
+            android:textSize="34sp" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/btnForgotPasswordBack"
+            android:layout_width="207dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginStart="110dp"
+            android:background="@android:color/transparent"
+            app:lottie_autoPlay="true"
+            app:lottie_colorFilter="@color/trucking_200"
+            app:lottie_fileName="caution.json"
+            app:lottie_speed="0.9" />
+
+        <TextView
+            android:id="@+id/textView40"
+            android:layout_width="309dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="280dp"
+            android:gravity="center"
+            android:text="User has been seen at a clinic within 24hrs "
+            android:textColor="@color/trucking_grey"
+            android:textSize="20sp" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

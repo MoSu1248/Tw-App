@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/test_layout"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="12dp" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/signup_card"
+        android:layout_width="792dp"
+        android:layout_height="1105dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/border"
+        android:transitionName="offline_transition_card"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.669"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center"
+            android:text="Referrals"
+            android:textColor="#494949"
+            android:textSize="60sp" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="330dp"
+            android:layout_marginTop="75dp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:text="Refer the client for the follwing"
+            android:textColor="@color/grey"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+
+        <Button
+            android:id="@+id/refferal3_nextbtn"
+            android:layout_width="164dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="408dp"
+            android:layout_marginTop="1000dp"
+            android:background="@drawable/ripple_effect_outline"
+            android:fontFamily="@font/montserrat_medium"
+            android:shadowColor="#272424"
+            android:text="Next"
+            android:textColor="@drawable/btn_txt_color"
+            android:textSize="16sp"
+            app:cornerRadius="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/refferal3_prevbtn"
+            android:layout_width="164dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="208dp"
+            android:layout_marginTop="1000dp"
+            android:background="@drawable/ripple_effect_outline"
+            android:fontFamily="@font/montserrat_medium"
+            android:shadowColor="#272424"
+            android:text="Previous"
+            android:textColor="@drawable/btn_txt_color"
+            android:textSize="16sp"
+            app:cornerRadius="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/refferal3_nextbtn"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="320dp"
+            android:layout_marginTop="300dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Referral Facility"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup11"
+            android:layout_width="257dp"
+            android:layout_height="276dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="300dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView34"
+            app:layout_constraintVertical_bias="0.0">
+
+            <RadioButton
+                android:id="@+id/private_facility"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:elevation="4dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="Private"
+                android:textAlignment="center"
+                android:textColor="@drawable/text_color"
+                app:layout_constraintEnd_toStartOf="@+id/female"
+                app:layout_constraintHorizontal_bias="0.689"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+            <RadioButton
+                android:id="@+id/public_referral"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="384dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:elevation="4dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="Public"
+                android:textAlignment="center"
+                android:textColor="@drawable/text_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+            <RadioButton
+                android:id="@+id/affinity_health"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="384dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:elevation="4dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="Affinity Health"
+                android:textAlignment="center"
+                android:textColor="@drawable/text_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginStart="310dp"
+            android:layout_marginTop="600dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Preferred Facility"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.285"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup11" />
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:id="@+id/textInputLayout22"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="486dp"
+            android:layout_height="109dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="650dp"
+            app:boxCollapsedPaddingTop="10dp"
+            app:boxStrokeColor="#B71C1C"
+            app:circularflow_defaultRadius="5dp"
+            app:hintTextColor="#383C3C"
+            app:layout_constraintStart_toStartOf="@+id/textView11"
+            app:layout_constraintTop_toBottomOf="@+id/textView11">
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:id="@+id/preferred_facility"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/montserrat_medium"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHighlight="#A55252"
+                android:textColorHint="#5A5858"
+                android:textColorLink="#B71C1C" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

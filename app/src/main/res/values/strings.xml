@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Trucking Wellness</string>
+    <string-array name="testTypeArray">
+        <item>Choose one of the following</item>
+        <item>Single</item>
+        <item>Couple</item>
+    </string-array>
+
+    <string-array name="idType">
+        <item>ID Type</item>
+        <item>South African ID</item>
+        <item>Passport</item>
+        <item>No ID</item>
+    </string-array>
+
+    <string-array name="contactTime">
+        <item>Contact Time</item>
+        <item>8-12am</item>
+        <item>12-5pm</item>
+        <item>5pm Onwards</item>
+        <item>Do not contact</item>
+    </string-array>
+
+    <string-array name="language">
+        <item>Language</item>
+        <item>English</item>
+        <item>Afrikaanse</item>
+        <item>Ndebele</item>
+        <item>Northen Sotho</item>
+        <item>Sotho</item>
+        <item>Swazi</item>
+        <item>Tsonga</item>
+        <item>Tswana</item>
+        <item>Venda</item>
+        <item>Xhosa</item>
+        <item>Zulu</item>
+    </string-array>
+
+    <string-array name="englishProf">
+        <item>English Proficiency </item>
+        <item>Good</item>
+        <item>Fair</item>
+        <item>Poor</item>
+        <item>None</item>
+    </string-array>
+
+    <string-array name="keyPop">
+        <item>Key Population</item>
+        <item>Administration</item>
+        <item>Contract/Supplier employee</item>
+        <item>Driver assistant</item>
+        <item>General worker</item>
+        <item>Long distance truck driver</item>
+        <item>Management</item>
+        <item>Not a key Population type</item>
+        <item>Other Key Population type</item>
+        <item>Person who injects drugs</item>
+        <item>Security</item>
+        <item>Sex worker</item>
+        <item>Supervisor/Foreman</item>
+        <item>Trainee</item>
+        <item>Workshop</item>
+    </string-array>
+
+    <string-array name="relationship">
+        <item>Relationship Status</item>
+        <item>Married</item>
+        <item>Single in cohabiting relationship</item>
+        <item>Single in non-cohabiting relationship</item>
+        <item>Single not in a relationship</item>
+        <item>Divorced/Widowed in a cohabiting relationship</item>
+        <item>Divorced/Widowed in a non-cohabiting relationship</item>
+        <item>Divorced/Widowed not in a relationship</item>
+        <item>Serious multiple partners</item>
+        <item>Casual multiple partners</item>
+    </string-array>
+
+    <string-array name="nationality">
+        <item>Nationality</item>
+        <item>South African</item>
+        <item>Foreign</item>
+    </string-array>
+
+    <string-array name="ethnicity">
+        <item>Ethnicity</item>
+        <item>White</item>
+        <item>Black</item>
+        <item>Coloured</item>
+        <item>Indian</item>
+        <item>Asian</item>
+        <item>Mixed race</item>
+        <item>Foreign</item>
+    </string-array>
+
+    <string-array name="lastTested">
+        <item>Last Tested</item>
+        <item> <![CDATA[<6 Months ]]></item>
+        <item>6-12 Months</item>
+        <item>13-24 Months</item>
+        <item>>24 Months</item>
+    </string-array>
+
+    <string-array name="lastResult">
+        <item>Last HIV Result</item>
+        <item>Non-reactive</item>
+        <item>Reactive</item>
+        <item>Discordant</item>
+        <item>Invalid</item>
+        <item>Incomplete</item>
+    </string-array>
+
+    <string-array name="testReason">
+        <item>Last Testing Location</item>
+        <item>Trucking Wellness Clinic</item>
+        <item>Local Clinic</item>
+        <item>Government Clinic</item>
+        <item>Private Doctor</item>
+        <item> Self Test</item>
+    </string-array>
+
+    <string-array name="accessed">
+        <item>Accessed</item>
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="numCiggs">
+        <item>Number of cigarettes</item>
+        <item>1-10</item>
+        <item>11-20</item>
+        <item>More than 20</item>
+    </string-array>
+
+    <string-array name="testName">
+        <item>Test Name</item>
+        <item>Abon</item>
+        <item>Advance Quality</item>
+        <item>Alere Determine</item>
+        <item>First Response</item>
+        <item>Homemed HIV 1/2 Poct</item>
+        <item>iCare</item>
+        <item>One Step Anti-HIV (1 and 2)</item>
+        <item>ORAQUICK</item>
+        <item>KHB HIV Test</item>
+    </string-array>
+
+    <string-array name="biggestImpactIllness">
+        <item>Biggest Impact Illness</item>
+        <item>Flu</item>
+        <item>Back pain</item>
+        <item>Headache</item>
+        <item>Stress</item>
+        <item>Diarrhea</item>
+        <item>Piles</item>
+        <item>None</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="emotionalWellness">
+        <item>Emotional Wellness</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+    <string name="title_activity_register">Register</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="alarm">Alarm</string>
+    <string name="folder">Folder</string>
+    <string name="image">Image</string>
+    <string name="message">Message</string>
+    <string name="one">One</string>
+    <string name="two">Two</string>
+    <string name="three">Three</string>
+    <string name="four">Four</string>
+    <string name="Home">Home</string>
+    <string name="Clients">Clients</string>
+    <string name="Requests">Requests</string>
+    <string name="Offline_Reg">Offline Reg</string>
+    <string name="Setup">Setup</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="FIVE">Five</string>
+    <string name="Logout">Logout</string>
+    <string name="spacing">spacing</string>
+
+
+    <string-array name="location_array">
+        <item>"Location"</item>
+        <item>Johannesburg</item>
+        <item>Beaufort West</item>
+        <item>Cape Town</item>
+        <item>Colesburg</item>
+        <item>East London</item>
+        <item>Hanover</item>
+        <item>Harrismith</item>
+        <item>Imperial ICS - Gauteng</item>
+        <item>Imperial TSD - Gauteng</item>
+        <item>Kokstad</item>
+        <item>Komatipoort </item>
+        <item>Liquor Runners Clinic</item>
+        <item>Marianhill</item>
+        <item>Mooiriver</item>
+        <item>Mthatha </item>
+        <item>Musina </item>
+        <item>Pomona Trucking Wellness Clinic</item>
+        <item>Port Elizabeth</item>
+        <item>Roodekop</item>
+        <item>Tugela</item>
+        <item>Ventersburg</item>
+        <item>Villiers</item>
+        <item>Warden</item>
+        <item>Zeerust</item>
+
+    </string-array>
+    <string name="title_activity_items">items</string>
+    <string name="title_activity_wellness_restest">Wellness_restest</string>
+    <string name="title_activity_wellness_retest2">Wellness_retest2</string>
+</resources>

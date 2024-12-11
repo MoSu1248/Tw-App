@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back2d"
+
+    tools:context=".SignupActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/register_offline_btn"
+        android:layout_width="689dp"
+        android:layout_height="781dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:transitionName="register_trans_card"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:id="@+id/textInputLayout3"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="324dp"
+            android:layout_height="66dp"
+            android:layout_marginStart="180dp"
+            android:layout_marginTop="300dp"
+            app:boxCollapsedPaddingTop="10dp"
+            app:boxStrokeColor="#B71C1C"
+            app:circularflow_defaultRadius="5dp"
+            app:hintTextColor="#383C3C">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/signup_email"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="56dp"
+                android:clickable="false"
+                android:ems="10"
+                android:fontFamily="@font/montserrat_medium"
+                android:hint="Email"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.395"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Nametxt" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:id="@+id/textInputLayout4"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="324dp"
+            android:layout_height="66dp"
+            android:layout_marginStart="180dp"
+            android:layout_marginTop="500dp"
+            app:boxCollapsedPaddingTop="10dp"
+            app:boxStrokeColor="#B71C1C"
+            app:circularflow_defaultRadius="5dp"
+            app:hintTextColor="#383C3C">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/signup_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="484dp"
+                android:ems="10"
+                android:fontFamily="@font/montserrat_medium"
+                android:hint="Confirm Password"
+                android:inputType="number"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.473"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Idtxt" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:id="@+id/textInputLayout6"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="324dp"
+            android:layout_height="66dp"
+            android:layout_marginStart="180dp"
+            android:layout_marginTop="400dp"
+            app:boxCollapsedPaddingTop="10dp"
+            app:boxStrokeColor="#B71C1C"
+            app:circularflow_defaultRadius="5dp"
+            app:hintTextColor="#383C3C">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:id="@+id/signup_password"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="356dp"
+                android:ems="10"
+                android:fontFamily="@font/montserrat_medium"
+                android:hint="Password"
+                android:inputType="number"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.394"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="267dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="75dp"
+            android:fontFamily="@font/montserrat_semibold"
+
+            android:gravity="center"
+            android:text="OFFLINE REGISTRATION"
+            android:textColor="@color/trucking_grey"
+            android:textColorHint="@color/black"
+            android:textSize="35sp" />
+
+        <ImageView
+            android:id="@+id/imageView18"
+            android:layout_width="wrap_content"
+            android:layout_height="177dp"
+            android:layout_marginLeft="340dp"
+            android:layout_marginTop="50dp"
+            android:rotation="0"
+            app:srcCompat="@drawable/header_line" />
+
+        <ImageView
+            android:id="@+id/offline_img"
+            android:layout_width="290dp"
+            android:layout_height="161dp"
+            android:layout_marginStart="350dp"
+            android:layout_marginTop="60dp"
+            android:src="@drawable/write"
+            android:transitionName="register_trans_img" />
+
+        <Button
+            android:id="@+id/signup_button"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+            android:layout_width="213dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="230dp"
+            android:layout_marginTop="650dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Submit"
+            app:strokeColor="@color/trucking_200"
+            app:strokeWidth="1.5dp" />
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/Backbtn"
+        android:layout_width="152dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="748dp"
+        android:background="@android:color/transparent"
+        android:rotation="180"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_colorFilter="@color/trucking_grey"
+        app:lottie_fileName="Animation_1702899041277.json"
+        app:lottie_repeatCount="10000"
+        app:lottie_speed="1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

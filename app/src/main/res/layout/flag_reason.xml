@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/consent_noti">
+
+    <RelativeLayout
+        android:id="@+id/flag_container"
+        android:layout_width="413dp"
+        android:layout_height="457dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <RadioGroup
+            android:id="@+id/flag_user"
+            android:layout_width="260dp"
+            android:layout_height="86dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="120dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.212"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+            <RadioButton
+                android:id="@+id/flag_user_yes"
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:elevation="4dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="Yes"
+                android:textAlignment="center"
+                android:textColor="@drawable/text_color"
+                app:layout_constraintEnd_toStartOf="@+id/female"
+                app:layout_constraintHorizontal_bias="0.689"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+            <RadioButton
+                android:id="@+id/flag_user_no"
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="384dp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:elevation="4dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="No"
+                android:textAlignment="center"
+                android:textColor="@drawable/text_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        </RadioGroup>
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:id="@+id/textInputLayout224"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Flagging Reason"
+            app:boxCollapsedPaddingTop="10dp"
+            app:boxStrokeColor="#B71C1C"
+            app:circularflow_defaultRadius="5dp"
+            app:hintTextColor="#383C3C">
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:id="@+id/flag_reason"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/montserrat_medium"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHighlight="#A55252"
+                android:textColorHint="#5A5858"
+                android:textColorLink="#B71C1C"
+                android:textSize="14sp" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="100dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Flag User?"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.154"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+
+            android:id="@+id/textView49"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Flagging and Reasoning "
+            android:textColor="@color/trucking_grey"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/confirm_flag"
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="380dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Confirm"
+            android:textColor="@color/off_white" />
+
+        <ImageButton
+            android:id="@+id/dialog_close"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="370dp"
+            android:layout_marginTop="5dp"
+            android:background="#00FFFFFF"
+            app:srcCompat="@drawable/baseline_close_24" />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

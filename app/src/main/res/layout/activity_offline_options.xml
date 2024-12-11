@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back2d"
+    app:circularflow_defaultRadius="100dp"
+    tools:context=".OfflineOptions">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/top_container"
+        android:layout_width="500dp"
+        android:layout_height="550dp"
+        android:layout_weight="1"
+        android:transitionName="offline_transition_card"
+        app:cardCornerRadius="2dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.416">
+
+        <ImageView
+            android:id="@+id/imageView18"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="25dp"
+            android:rotation="0"
+            app:srcCompat="@drawable/header_line" />
+
+        <ImageButton
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="22dp"
+            android:backgroundTint="#00FFFFFF"
+            android:rotation="180"
+            android:tint="@color/grey"
+            app:srcCompat="@drawable/arrow_forward" />
+
+        <ImageView
+            android:id="@+id/offline_image"
+            android:layout_width="46dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="27dp"
+            android:tint="@color/trucking_200"
+            android:transitionName="offline_transition_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/offline_icon" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center"
+            android:text="OFFLINE OPTIONS"
+            android:textColor="#494949"
+            android:textSize="24sp"
+            android:transitionName="offline_transition_txt"
+            app:layout_constraintBottom_toTopOf="@+id/row2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/row2"
+            android:layout_width="match_parent"
+            android:layout_height="437dp"
+            android:layout_marginTop="80dp"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/register_offline_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:transitionName="register_trans_card"
+                app:cardBackgroundColor="@color/off_white"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="2dp">
+
+                <RelativeLayout
+
+                    android:id="@+id/reset_password_btn4"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:layout_marginTop="350dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/trucking_grey"
+                    android:transitionName="reset_trans_card"
+                    app:cardCornerRadius="2dp">
+
+
+                    <ImageView
+                        android:id="@+id/imageView20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="190dp"
+                        android:layout_marginTop="18dp"
+                        android:tint="@color/white"
+                        app:srcCompat="@drawable/arrow_forward" />
+
+                    <TextView
+                        android:id="@+id/textView52"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/montserrat_light"
+                        android:gravity="center"
+                        android:text="Register Now"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border_test2">
+
+
+                    <TextView
+                        android:id="@+id/offline_header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/offline_img"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="19dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="12dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:gravity="center"
+                        android:text="Register Offline Profile"
+                        android:textColor="@color/trucking_grey"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/offline_img"
+                        android:layout_width="97dp"
+                        android:layout_height="83dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="55dp"
+                        android:layout_marginTop="26dp"
+                        android:layout_marginEnd="55dp"
+                        android:src="@drawable/write"
+                        android:tint="@color/trucking_grey"
+                        android:transitionName="register_trans_img" />
+
+                    <TextView
+                        android:id="@+id/homeName"
+                        android:layout_width="290dp"
+                        android:layout_height="102dp"
+                        android:layout_below="@+id/offline_header"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="33dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="38dp"
+                        android:fontFamily="@font/montserrat_light"
+                        android:gravity="center"
+                        android:text="Register yourself for offline capabilities in the application"
+                        android:textColor="@color/trucking_grey"
+                        android:textSize="14sp"
+                        tools:layout_editor_absoluteX="-107dp"
+                        tools:layout_editor_absoluteY="875dp" />
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+
+                android:id="@+id/reset_password_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:transitionName="reset_trans_card"
+                app:cardBackgroundColor="@color/off_white"
+                app:cardCornerRadius="2dp">
+
+                <RelativeLayout
+
+                    android:id="@+id/reset_password_btn3"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:layout_marginTop="350dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/trucking_grey"
+                    android:transitionName="reset_trans_card"
+                    app:cardCornerRadius="2dp">
+
+                    <ImageView
+                        android:id="@+id/imageView21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="170dp"
+                        android:layout_marginTop="18dp"
+                        android:tint="@color/white"
+                        app:srcCompat="@drawable/arrow_forward" />
+
+                    <TextView
+                        android:id="@+id/textView53"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="60dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/montserrat_light"
+                        android:gravity="center"
+                        android:text="Reset Pin"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border_test2">
+
+                    <TextView
+                        android:id="@+id/homeName2"
+                        android:layout_width="290dp"
+                        android:layout_height="102dp"
+                        android:layout_below="@+id/beautyName"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="33dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="31dp"
+                        android:fontFamily="@font/montserrat_light"
+                        android:gravity="center"
+                        android:text="Reset your password by providing your email and a new pin code"
+                        android:textColor="@color/trucking_grey"
+                        android:textSize="14sp"
+                        tools:layout_editor_absoluteX="-107dp"
+                        tools:layout_editor_absoluteY="875dp" />
+
+                    <TextView
+                        android:id="@+id/beautyName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/setup_img"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="8dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:gravity="center"
+                        android:text="Reset Offline Password"
+                        android:textColor="@color/trucking_grey"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/setup_img"
+                        android:layout_width="97dp"
+                        android:layout_height="83dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="55dp"
+                        android:layout_marginTop="26dp"
+                        android:layout_marginEnd="55dp"
+                        android:src="@drawable/lock_icon"
+                        android:tint="@color/trucking_grey"
+                        android:transitionName="reset_trans_img" />
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/Backbtn"
+        android:layout_width="152dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="32dp"
+
+        android:layout_marginEnd="748dp"
+        android:background="@android:color/transparent"
+        android:rotation="180"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:lottie_autoPlay="true"
+        app:lottie_colorFilter="@color/trucking_grey"
+        app:lottie_fileName="Animation_1702899041277.json"
+        app:lottie_repeatCount="10000"
+        app:lottie_speed="1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

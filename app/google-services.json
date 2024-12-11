@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "33050189455",
+    "project_id": "truckingwellness-714f3",
+    "storage_bucket": "truckingwellness-714f3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:33050189455:android:02d5f2e4dc5d5de0391afa",
+        "android_client_info": {
+          "package_name": "com.example.truckingwellness"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "33050189455-tbgmefhir1g4tlhl5re5o8rf59mm4jv1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRgmp2fPeLL8yGwoDTVFbY8_OqVwfyLzc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "33050189455-tbgmefhir1g4tlhl5re5o8rf59mm4jv1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

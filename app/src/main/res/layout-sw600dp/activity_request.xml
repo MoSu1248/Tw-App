@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/request_background"
+
+    tools:context=".RequestActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/request_btn"
+        android:layout_width="686dp"
+        android:layout_height="943dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:transitionName="request_card_transition"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:id="@+id/textInputLayout3"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="324dp"
+            android:layout_height="66dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="340dp"
+            app:boxCollapsedPaddingTop="10dp"
+            app:boxStrokeColor="#B71C1C"
+            app:circularflow_defaultRadius="5dp"
+            app:hintTextColor="#383C3C">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Idtxt"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="176dp"
+                android:ems="10"
+                android:fontFamily="@font/montserrat_medium"
+                android:hint="Nurse ID"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.395"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Nametxt" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:id="@+id/textInputLayout22"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="324dp"
+            android:layout_height="66dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="440dp"
+            app:boxCollapsedPaddingTop="10dp"
+            app:boxStrokeColor="#B71C1C"
+            app:circularflow_defaultRadius="5dp"
+            app:hintTextColor="#383C3C">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/nurse_name"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="356dp"
+                android:ems="10"
+                android:fontFamily="@font/montserrat_medium"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.394"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:id="@+id/textInputLayout1"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="467dp"
+            android:layout_height="237dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="540dp"
+            app:boxCollapsedPaddingTop="10dp"
+            app:boxStrokeColor="#B71C1C"
+            app:circularflow_defaultRadius="5dp"
+            app:hintTextColor="#383C3C">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Reasontxt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="484dp"
+                android:ems="10"
+                android:fontFamily="@font/montserrat_medium"
+                android:hint="Details"
+
+                android:inputType="textMultiLine"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.473"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Idtxt" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/Submitbtn"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+
+            android:layout_width="213dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="225dp"
+            android:layout_marginTop="820dp"
+            android:layout_marginBottom="156dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Submit"
+            app:strokeColor="@color/trucking_200"
+            app:strokeWidth="1.5dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="271dp"
+            android:layout_height="162dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="60dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:gravity="center"
+
+            android:text="REQUESTS"
+            android:textColor="#494949"
+            android:textColorHint="@color/black"
+            android:textSize="48sp" />
+
+        <ImageView
+            android:id="@+id/request_image"
+            android:layout_width="290dp"
+            android:layout_height="161dp"
+            android:layout_marginStart="350dp"
+            android:layout_marginTop="60dp"
+            android:transitionName="request_transition"
+            app:srcCompat="@drawable/mail2" />
+
+        <ImageView
+            android:id="@+id/imageView18"
+            android:layout_width="wrap_content"
+            android:layout_height="177dp"
+            android:layout_marginLeft="340dp"
+            android:layout_marginTop="50dp"
+            android:rotation="0"
+            app:srcCompat="@drawable/header_line" />
+
+        <TextView
+            android:id="@+id/text_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="340dp"
+            android:layout_marginTop="290dp" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/Backbtn"
+        android:layout_width="152dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="32dp"
+
+        android:layout_marginEnd="748dp"
+        android:background="@android:color/transparent"
+        android:rotation="180"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:lottie_autoPlay="true"
+        app:lottie_colorFilter="@color/white"
+        app:lottie_fileName="Animation_1702899041277.json"
+        app:lottie_repeatCount="10000"
+        app:lottie_speed="1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

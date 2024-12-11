@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/offline_options_reset_background"
+    tools:context=".ResetActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/signup_card"
+        android:layout_width="686dp"
+        android:layout_height="643dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:transitionName="offline_transition_card"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.501">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:id="@+id/textInputLayout22"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="428dp"
+            android:layout_height="71dp"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="320dp"
+            app:boxCollapsedPaddingTop="10dp"
+            app:boxStrokeColor="#B71C1C"
+            app:circularflow_defaultRadius="5dp"
+            app:hintTextColor="#383C3C">
+
+            <EditText
+                android:id="@+id/confirm_password_reset"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginBottom="64dp"
+                android:ems="10"
+                android:fontFamily="@font/montserrat_medium"
+                android:hint="Confirm New Password"
+                android:inputType="textPersonName" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:id="@+id/textInputLayout3"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="428dp"
+            android:layout_height="71dp"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="420dp"
+            app:boxCollapsedPaddingTop="10dp"
+            app:boxStrokeColor="#B71C1C"
+            app:circularflow_defaultRadius="5dp"
+            app:hintTextColor="#383C3C">
+
+            <EditText
+                android:id="@+id/password_reset"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginBottom="24dp"
+                android:ems="10"
+                android:fontFamily="@font/montserrat_medium"
+                android:hint="New Password"
+                android:inputType="textPersonName" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_confirm"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+
+            android:layout_width="213dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="240dp"
+            android:layout_marginTop="520dp"
+            android:layout_marginBottom="156dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Submit"
+            app:strokeColor="@color/trucking_200"
+            app:strokeWidth="1.5dp" />
+        <ImageView
+            android:id="@+id/imageView18"
+            android:layout_width="wrap_content"
+            android:layout_height="177dp"
+            android:layout_marginLeft="340dp"
+            android:layout_marginTop="50dp"
+            android:rotation="0"
+            app:srcCompat="@drawable/header_line" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="271dp"
+            android:layout_height="162dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="60dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:gravity="center"
+
+            android:text="PLEASE ENTER NEW PASSWORD"
+            android:textColor="@color/trucking_grey"
+            android:textColorHint="@color/black"
+            android:textSize="34sp" />
+
+        <ImageView
+            android:id="@+id/signup_image"
+            android:layout_width="290dp"
+            android:layout_height="161dp"
+            android:layout_marginStart="370dp"
+            android:layout_marginTop="60dp"
+
+            android:src="@drawable/lock_icon"
+            android:transitionName="signup_transition" />
+
+        <TextView
+            android:id="@+id/username_reset_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="300dp"
+            android:layout_marginTop="255dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:textColor="@color/trucking_grey" />
+
+    </androidx.cardview.widget.CardView>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/Backbtn"
+        android:layout_width="152dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="32dp"
+
+        android:layout_marginEnd="748dp"
+        android:background="@android:color/transparent"
+        android:rotation="180"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:lottie_autoPlay="true"
+        app:lottie_colorFilter="@color/trucking_grey"
+        app:lottie_fileName="Animation_1702899041277.json"
+        app:lottie_repeatCount="10000"
+        app:lottie_speed="1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
